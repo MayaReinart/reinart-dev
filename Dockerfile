@@ -1,10 +1,19 @@
 # Dockerfile
+# Build stage
 FROM node:18-alpine as build
 WORKDIR /app
+COPY package*.json ./
+RUN npm install
 COPY . .
-RUN npm install && npm run build
+RUN npm run build
 
-FROM nginx:alpine
-COPY --from=build /app/dist /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# Production stage
+FROM node:18-alpine
+WORKDIR /app
+COPY --from=build /app/package*.json ./
+COPY --from=build /app/.next ./.next
+COPY --from=build /app/public ./public
+RUN npm install --production
+
+EXPOSE 3000
+CMD ["npm", "start"]
