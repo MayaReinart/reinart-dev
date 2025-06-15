@@ -1,16 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Mail, FileText } from "lucide-react";
 import { GitHubIcon } from "./icons";
 
 export default function PortfolioPage() {
   return (
-    <main className="min-h-screen bg-gray-50 text-gray-900 p-4 md:p-8">
+    <main className="min-h-screen bg-gray-50 text-gray-900 p-4 md:p-8 max-w-4xl mx-auto">
+      {/* Contacts Section */}
       <header className="mb-8">
         <h1 className="text-3xl font-bold mb-2">Maya Reinart</h1>
-        <p className="text-sm text-gray-600">Backend Developer | Python | AI Integration</p>
-        <div className="flex gap-4 mt-2">
+        <p className="text-sm text-gray-600 mb-4">Backend Developer | Python | AI Integration</p>
+        <div className="flex flex-wrap gap-4">
           <a href="mailto:mayareinart@gmail.com" className="text-blue-600 hover:underline flex items-center gap-1">
             <Mail size={16} /> mayareinart@gmail.com
           </a>
@@ -23,53 +23,55 @@ export default function PortfolioPage() {
         </div>
       </header>
 
-      <Tabs defaultValue="intro" className="w-full">
-        <TabsList className="grid w-full grid-cols-3 mb-4">
-          <TabsTrigger value="intro">About</TabsTrigger>
-          <TabsTrigger value="introspect">API Introspection</TabsTrigger>
-          <TabsTrigger value="focus">Focus Dashboard</TabsTrigger>
-        </TabsList>
+      {/* CV Section */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+        <Card>
+          <CardContent className="p-4">
+            <p className="mb-4">
+              I&apos;m a backend developer with a focus on Python, FastAPI, and clean, maintainable architecture.
+              This is a minimal, expanding portfolio of practical tools I&apos;ve built, showcasing not just code, but
+              product thinking, system design, and real-world use cases.
+            </p>
+            <Button asChild>
+              <a href="/cv">View Full CV</a>
+            </Button>
+          </CardContent>
+        </Card>
+      </section>
 
-        <TabsContent value="intro">
+      {/* Projects Section */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Projects</h2>
+        
+        <div className="space-y-4">
           <Card>
             <CardContent className="p-4">
-              <p>
-                I&apos;m a backend developer with a focus on Python, FastAPI, and clean, maintainable architecture.
-                This is a minimal, expanding portfolio of practical tools I&apos;ve built, showcasing not just code, but
-                product thinking, system design, and real-world use cases.
-              </p>
-            </CardContent>
-          </Card>
-        </TabsContent>
-
-        <TabsContent value="introspect">
-          <Card>
-            <CardContent className="p-4">
-              <p>
+              <h3 className="text-xl font-medium mb-2">API Introspection Tool</h3>
+              <p className="mb-4">
                 A tool for introspecting your OpenAI-based APIs. It extracts and analyzes API structure, prompt
                 flows, and model usage, offering dev-friendly summaries.
               </p>
-              <Button className="mt-4" asChild>
-                <a href="https://introspect.reinart.dev" target="_blank">Launch Introspect</a>
-              </Button>
-            </CardContent>
-          </Card>
-        </TabsContent>
-
-        <TabsContent value="focus">
-          <Card>
-            <CardContent className="p-4">
-              <p>
-                [Placeholder] An experimental developer dashboard focused on tracking focus time, decision fatigue,
-                and flow interruptions. More soon.
-              </p>
-              <Button className="mt-4" variant="outline" disabled>
+              <Button variant="outline" disabled>
                 Coming Soon
               </Button>
             </CardContent>
           </Card>
-        </TabsContent>
-      </Tabs>
+
+          <Card>
+            <CardContent className="p-4">
+              <h3 className="text-xl font-medium mb-2">Focus Dashboard</h3>
+              <p className="mb-4">
+                An experimental developer dashboard focused on tracking focus time, decision fatigue,
+                and flow interruptions. More soon.
+              </p>
+              <Button variant="outline" disabled>
+                Coming Soon
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
     </main>
   );
 }
