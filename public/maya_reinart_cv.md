@@ -10,11 +10,9 @@ São Miguel, Azores (Portugal) · Remote-only
 
 ## Summary
 
-Backend developer with 4+ years of professional Python experience and a prior background in C++/IoT. I focus on building maintainable, observable systems — especially around structured data, templating pipelines, and developer-facing tools. I work best on small, thoughtful teams with strong communication and clear ownership. Remote-only. Asynchronous-first teams preferred.
+Backend developer with 5 years of professional Python experience and a prior background in C++/IoT. I strive to build maintainable, observable systems, and enjoy working with data, AI integration, and developer-facing tools. I work best in small to medium, thoughtful teams with strong communication and clear ownership. Remote-only. Asynchronous-first teams preferred.
 
-Strong experience with FastAPI, PostgreSQL (SQLAlchemy, Alembic), Docker, GitHub Actions, and AWS Lambda/ECS. Heavy exposure to OpenXML and `.docx` generation (via `python-docx`, `html2docx`, and XML manipulation). Familiar with frontend codebases (React/TypeScript), observability tooling (Grafana, DataDog), and prompt-tuned OpenAI LLMs (via LlamaIndex). Always reviews AI-generated code.
-
-Currently deepening skills in Terraform, Prometheus, and backend security — aiming for long-term growth toward systems design and staff-level thinking.
+Strong experience with FastAPI, PostgreSQL (SQLAlchemy, Alembic), Docker, GitHub Actions, and AWS Lambda/ECS. Considerable exposure to OpenXML and `.docx` generation (via `python-docx`, `html2docx`, and XML manipulation). Familiar with frontend codebases (React/TypeScript), observability tooling (Grafana, DataDog), and prompt-tuned OpenAI LLMs (via LlamaIndex).
 
 ---
 
@@ -48,34 +46,47 @@ Currently deepening skills in Terraform, Prometheus, and backend security — ai
 
 *Remote · 2023–2025*
 
-AI-powered productivity platform for architects and construction professionals (web and mobile).
+AI-powered productivity platform for architects and construction professionals.
 
-- Built and maintained backend services in Python (FastAPI, PostgreSQL, GitHub Actions, AWS Lambda/ECS).
+- Built and maintained backend services in Python (FastAPI, PostgreSQL, GitHub Actions, AWS ECS/Lambda).
 - Contributed to frontend codebase (React/TypeScript), focusing on backend integration.
-- Developed robust email parsers for Gmail, Outlook, and Apple protocols, extracting structured metadata from diverse formats.
+- Developed email parsers for Gmail, Outlook, and Apple protocols, extracting structured metadata from diverse formats.
 - Worked extensively on document generation from Markdown/HTML to Word, handling `.docx` styles, images, tables, numbering, and OpenXML internals.
 - Integrated LLMs via OpenAI API (prompt tuning, structured output, LlamaIndex).
-- Evaluated and set up observability stack (Grafana dashboards, logs, alerts); researched and trialed multiple monitoring platforms.
+- Evaluated and set up observability stack (Grafana dashboards, logs, alerts); researched and trialed multiple monitoring and customer service platforms.
 - Fine-tuned `loguru` logging, including interceptors for Uvicorn/FastAPI to improve traceability.
-- Researched customer support tooling and led decision to implement ZenDesk.
 
 Top skills: Python · FastAPI · Postgres · Observability · AI Integration
 
 ---
 
+**Ivideon** — *Backend Developer*
+
+*Remote · 2021–2023*
+
+Video surveillance platform with millions of connected devices.
+
+- Built and maintained backend services (face and license plate recognition) in Python (Tornado), with testing via Pytest/Coverage.
+- Contributed to infrastructure using Docker and CI/CD pipelines (Jenkins, GitLab CI).
+- Managed data flows across MongoDB, Redis, and PostgreSQL.
+
+Top skills: Python · Tornado · CI/CD · Docker · MongoDB
+
+---
+
 **GamesBoost42** — *Backend Developer*
 
-*Remote · 2022 (short-term)*
+*Remote · 2021 (short-term)*
 
 Brief contract role focused on API and data integrations for a platform supporting mobile game monetization.
 
 Stack: Python, FastAPI, PostgreSQL, AWS.
 
-Top skills: Python · APIs · PostgreSQL · Async · Remote work
+Top skills: Python · APIs · PostgreSQL
 
 ---
 
-**Smartiko** — *Tech Lead / Backend Developer*
+**Smartiko** — *Backend Developer, then Tech Lead*
 
 *Remote · 2017–2021*
 
@@ -89,25 +100,9 @@ Top skills: Team Leadership · C++ · Python · IoT · System Architecture
 
 ---
 
-**Ivideon** — *Backend Developer*
-
-*Remote · 2015–2017*
-
-Video surveillance platform with millions of connected devices.
-
-- Built and maintained backend services in Python (Tornado), with testing via Tox/Pytest/Coverage.
-- Contributed to infrastructure using Docker and CI/CD pipelines (Jenkins, GitLab CI).
-- Managed data flows across MongoDB, Redis, and PostgreSQL.
-- Wrote and maintained Debian packaging scripts using Make, CMake, and `fpm`.
-- Integrated self-hosted Sentry and contributed to cross-language infrastructure (Python, C++, Node.js).
-
-Top skills: Python · Tornado · CI/CD · Docker · MongoDB
-
----
-
 **Radio-Automatics** — *Embedded Developer*
 
-*On-site (Moscow, Russia) · 2013–2015*
+*On-site (Moscow, Russia) · 2015–2017*
 
 Built C/C++ software for protection systems in industrial power hardware (embedded Linux and bare-metal).
 
